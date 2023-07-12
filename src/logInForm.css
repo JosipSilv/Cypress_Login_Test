@@ -1,0 +1,24 @@
+.page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 80%;
+}
+
+.forma-container {
+    width: 60%;
+}
+
+.input-container {
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

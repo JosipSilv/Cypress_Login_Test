@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Forma from './components/Forma';
+import { Box } from '@mui/material';
+import './logInForm.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='page-container'>
+      <Box
+        sx={{
+          width: '40%',
+          height: '80%',
+          backgroundColor: '#d4d9f2',
+          borderRadius: '10px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Forma />
+      </Box>
+    </div >
   );
 }
 
