@@ -1,24 +1,16 @@
-import Forma from './components/Forma';
-import { Box } from '@mui/material';
-import './logInForm.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomeComponent from './components/HomeComponent';
+import SecondaryComponent from './components/SecondaryComponent';
 
 function App() {
   return (
-    <div className='page-container'>
-      <Box
-        sx={{
-          width: '40%',
-          height: '80%',
-          backgroundColor: '#d4d9f2',
-          borderRadius: '10px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Forma />
-      </Box>
-    </div >
+    <Router>
+      <Routes>
+        <Route exact path='/' Component={HomeComponent} />
+        <Route path='/secondary' Component={SecondaryComponent} />
+      </Routes>
+    </Router>
   );
 }
 
